@@ -10,6 +10,11 @@ router.get("/", (req, res, next) => {
 
 //Handling incoming POST requests to /orders
 router.post("/", (req, res, next) => {
+  const order = {
+    customerId: req.body.customerId,
+    quantity: req.body.quantity,
+    bookId: req.body.bookId,
+  };
   res.status(200).json({
     message: "Handling POST requests to /orders",
   });

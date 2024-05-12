@@ -10,8 +10,15 @@ router.get("/", (req, res, next) => {
 
 //Handling incoming POST requests to /customers
 router.post("/", (req, res, next) => {
+  const customer = {
+    customerId: req.body.customerId,
+    name: req.body.name,
+    email: req.body.email,
+    address: req.body.address,
+  };
   res.status(200).json({
     message: "Customer created",
+    createdCustomer: customer,
   });
 });
 
