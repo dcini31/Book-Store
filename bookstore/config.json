@@ -1,0 +1,10 @@
+{ 
+    "development": {
+        "user": "daniel",
+        "password": "20naD5013*",
+        "database": "Bookstore",
+        "dialect": "mssql",
+        "host": "DESKTOP-4Q29O40",
+        "port": 1433
+    }
+}
